@@ -4,6 +4,8 @@ This is a plugin to run OCRmyPDF with the AzureOCR engine, providing an alternat
 
 This plugin is currently experimental and may not implement all features available in OCRmyPDF with Tesseract. It may still rely on Tesseract for certain operations.
 
+This is an adaptation from the Plugin EasyOCR to OCRmyPDF.
+
 ## Installation
 To use this plugin:
 
