@@ -10,8 +10,8 @@ import ocrmypdf_azureocr
 
 def test_azureocr(resources, outpdf):
     
-    #ocrmypdf.ocr(resources / "jbig2.pdf", outpdf)
-    ocrmypdf.ocr(resources / "100page.pdf", outpdf)
+    ocrmypdf.ocr(resources / "jbig2.pdf", outpdf)
+    #ocrmypdf.ocr(resources / "100page.pdf", outpdf)
     assert outpdf.exists()
 
     with pikepdf.open(outpdf) as pdf:
