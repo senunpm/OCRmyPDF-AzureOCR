@@ -78,7 +78,7 @@ jobs:
           unpaper --version
           img2pdf --version
 
-      - name: Test
+      - name: Run Test
         env:
           API_KEY: ${{ secrets.API_KEY }}
           ENDPOINT: ${{ secrets.ENDPOINT }}
