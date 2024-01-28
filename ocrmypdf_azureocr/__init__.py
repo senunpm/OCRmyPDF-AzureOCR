@@ -187,7 +187,10 @@ class AzureOCREngine(OcrEngine):
         #Document Intelligence's deep learning based universal models extract all multi-lingual text in your documents, including text lines with mixed languages, and don't require specifying a language code.
         #Don't provide the language code as the parameter unless you are sure about the language and want to force the service to apply only the relevant model. Otherwise, the service may return incomplete and incorrect text.
         #Also, It's not necessary to specify a locale. This is an optional parameter. The Document Intelligence deep-learning technology will auto-detect the text language in your image.
-
+        
+        #initialize raw_results
+        raw_results =[]
+        
         # Read the file
         with GPU_SEMAPHORE:
             reader = call_azure_service(input_file)
