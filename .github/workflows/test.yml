@@ -3,10 +3,7 @@ name: Test AzureOCR
 on:
   push:
     branches:
-      - main
-      - ci
-      - release/*
-      - feature/*
+      - master
     tags:
       - v*
     paths-ignore:
@@ -84,4 +81,3 @@ jobs:
           ENDPOINT: ${{ secrets.ENDPOINT }}
         run: |
           python -m pytest tests/
-        
